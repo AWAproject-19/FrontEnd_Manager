@@ -13,7 +13,7 @@ export default function Login() {
   
     try {
      const result = await axios.post(
-      Constant.API_ADDRESS + '/loginForJWT',
+      Constant.API_ADDRESS + '/',
        null,
      {
        auth:  {

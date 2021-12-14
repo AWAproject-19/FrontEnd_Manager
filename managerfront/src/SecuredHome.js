@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+//import axios from 'axios'
 
 export default function SecuredHome() {
 return (
@@ -9,7 +10,6 @@ return (
    <div>
      <Link to="/restaurant"><button type='type'> Add Restaurant </button></Link>
   </div>
-  
  
  </div>
 

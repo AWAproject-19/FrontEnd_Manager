@@ -14,10 +14,9 @@ export default function Signup() {
    setSignupProcessState('processing');
    
   try {
-     const result = await axios.post(Constant.API_ADDRESS + '/registerBasic',
+     const result = await axios.post(Constant.API_ADDRESS + '/',
       {
          username: event.target.username.value,
-         email: event.target.email.value,
          password: event.target.password.value,
       });
 
@@ -37,7 +36,7 @@ export default function Signup() {
  let signupUIControls = null;
  switch(signupProcessState) {
    case "idle":
-     signupUIControls = <button type='submit'>Sign in</button>
+     signupUIControls = <button type='submit'>Sign up</button>
       break;
 
       case "processing":
@@ -67,10 +66,6 @@ export default function Signup() {
        Username <br/>
        <input type='text' name='username' />
      </div>
-    <div>
-      Email <br/>
-      <input type='text' name='email' />
-    </div>  
       <div>
          Password <br/>
        <input type='text' name='password' />
